@@ -1,0 +1,23 @@
+/* line 4, /Users/timrosenberg/Documents/GitHub/tts/style/sass/style.scss */
+body {
+  background: orange;
+}
+
+/* line 7, /Users/timrosenberg/Documents/GitHub/tts/style/sass/style.scss */
+h1 {
+  color: #ffc966;
+  font-family: Helvetica, arial, sans-serif;
+}
+
+/* line 11, /Users/timrosenberg/Documents/GitHub/tts/style/sass/style.scss */
+p {
+  color: #996300;
+  font-family: Helvetica, arial, sans-serif;
+}
+
+/* line 17, /Users/timrosenberg/Documents/GitHub/tts/style/sass/style.scss */
+main h1 {
+  color: #996300;
+}
+
+/*# sourceMappingURL=../css/style.map */
