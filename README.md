@@ -1,4 +1,4 @@
-# Tech Talent South
+# Tech Talent South Edit
 
 ## SASS
 - Run Scout app to compile SASS  
