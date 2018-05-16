@@ -1,3 +1,58 @@
 body{
-  background: blue;
+
+}
+
+// ### OLD EXAMPLE
+// .container{
+//   border: solid 5px black;
+//   background: lightblue;
+// }
+// .container-fluid{
+//   border: solid 5px red;
+//   background: lightblue;
+// }
+
+
+
+
+// ### SASS OPTIMIZED EXAMPLE
+.border{
+  border: solid 3px black;
+}
+
+.container{
+    @extend .border;
+    &-fluid{
+      @extend .border;
+      border-color: red;
+    }
+}
+
+[class^="col"]{
+  @extend .border;
+}
+.collen{
+
+}
+
+.col{
+  &-1{}
+  &-2{}
+  &-3{}
+}
+
+.col-6{
+  border: solid 3px black;
+}
+.col-4{
+  border: solid 3px black;
+}
+.col-sm-4{
+  border: solid 3px black;
+}
+.col-8{
+  border: solid 3px black;
+}
+.col-12{
+  border: solid 3px black;
 }

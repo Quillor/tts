@@ -1,6 +1,29 @@
-/* line 1, /Users/timrosenberg/Documents/GitHub/tts/week-6/bootstrap-page/style/sass/style.scss */
-body {
-  background: blue;
-}
+/* line 19, /Users/timrosenberg/Documents/GitHub/tts/week-6/bootstrap-page/style/sass/style.scss */
+.border, .container, .container-fluid, [class^="col"] {
+  border: solid 3px black; }
+
+/* line 25, /Users/timrosenberg/Documents/GitHub/tts/week-6/bootstrap-page/style/sass/style.scss */
+.container-fluid {
+  border-color: red; }
+
+/* line 44, /Users/timrosenberg/Documents/GitHub/tts/week-6/bootstrap-page/style/sass/style.scss */
+.col-6 {
+  border: solid 3px black; }
+
+/* line 47, /Users/timrosenberg/Documents/GitHub/tts/week-6/bootstrap-page/style/sass/style.scss */
+.col-4 {
+  border: solid 3px black; }
+
+/* line 50, /Users/timrosenberg/Documents/GitHub/tts/week-6/bootstrap-page/style/sass/style.scss */
+.col-sm-4 {
+  border: solid 3px black; }
+
+/* line 53, /Users/timrosenberg/Documents/GitHub/tts/week-6/bootstrap-page/style/sass/style.scss */
+.col-8 {
+  border: solid 3px black; }
+
+/* line 56, /Users/timrosenberg/Documents/GitHub/tts/week-6/bootstrap-page/style/sass/style.scss */
+.col-12 {
+  border: solid 3px black; }
 
 /*# sourceMappingURL=../css/style.map */
