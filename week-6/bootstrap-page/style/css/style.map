@@ -5,8 +5,8 @@
 		"../sass/style.scss"
 	],
 	"sourcesContent": [
-		"body{\n\n}\n\n// ### OLD EXAMPLE\n// .container{\n//   border: solid 5px black;\n//   background: lightblue;\n// }\n// .container-fluid{\n//   border: solid 5px red;\n//   background: lightblue;\n// }\n\n\n\n\n// ### SASS OPTIMIZED EXAMPLE\n.border{\n  border: solid 3px black;\n}\n\n.container{\n    @extend .border;\n    &-fluid{\n      @extend .border;\n      border-color: red;\n    }\n}\n\n[class^=\"col\"]{\n  @extend .border;\n}\n.collen{\n\n}\n\n.col{\n  &-1{}\n  &-2{}\n  &-3{}\n}\n\n.col-6{\n  border: solid 3px black;\n}\n.col-4{\n  border: solid 3px black;\n}\n.col-sm-4{\n  border: solid 3px black;\n}\n.col-8{\n  border: solid 3px black;\n}\n.col-12{\n  border: solid 3px black;\n}\n"
+		"// body{\n//\n// }\n//\n// // ### OLD EXAMPLE\n// // .container{\n// //   border: solid 5px black;\n// //   background: lightblue;\n// // }\n// // .container-fluid{\n// //   border: solid 5px red;\n// //   background: lightblue;\n// // }\n//\n//\n//\n//\n// // ### SASS OPTIMIZED EXAMPLE\n// .border{\n//   border: solid 3px black;\n// }\n//\n// .container{\n//     @extend .border;\n//     &-fluid{\n//       @extend .border;\n//       border-color: red;\n//     }\n// }\n//\n// [class^=\"col-\"]{\n//   @extend .border;\n// }\n// .collen{\n//\n// }\n//\n// .col{\n//   &-1{}\n//   &-2{}\n//   &-3{}\n// }\n//\n// .col-6{\n//   border: solid 3px black;\n// }\n// .col-4{\n//   border: solid 3px black;\n// }\n// .col-sm-4{\n//   border: solid 3px black;\n// }\n// .col-8{\n//   border: solid 3px black;\n// }\n// .col-12{\n//   border: solid 3px black;\n// }\n"
 	],
-	"mappings": ";AAkBA,AAAA,OAAO,EAIP,AAJA,UAIU,EAAV,AAJA,gBAIU,GAQV,AAAA,AAZA,KAYC,EAAO,KAAK,AAAZ,EAZM;EACL,MAAM,EAAE,eAAgB,GACzB;;;AAED,AAAA,gBAAU,CAEC;EAEL,YAAY,EAAE,GAAI,GACnB;;;AAgBL,AAAA,MAAM,CAAA;EACJ,MAAM,EAAE,eAAgB,GACzB;;;AACD,AAAA,MAAM,CAAA;EACJ,MAAM,EAAE,eAAgB,GACzB;;;AACD,AAAA,SAAS,CAAA;EACP,MAAM,EAAE,eAAgB,GACzB;;;AACD,AAAA,MAAM,CAAA;EACJ,MAAM,EAAE,eAAgB,GACzB;;;AACD,AAAA,OAAO,CAAA;EACL,MAAM,EAAE,eAAgB,GACzB",
+	"mappings": "",
 	"names": []
 }
