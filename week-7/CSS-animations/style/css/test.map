@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/test.css",
+	"sources": [
+		"../sass/test.sass"
+	],
+	"sourcesContent": [
+		"\n\n\np {\n  color: blue; }\n\n\nh1 {\n  color: red; }\n\n.class {\n  h1 {\n    color: black; } }\n"
+	],
+	"mappings": ";AAGA,AAAA,CAAC,CAAC;EACA,KAAK,EAAE,IAAK;CAAG;;;AAGjB,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,GAAI;CAAG;;;AAEhB,AACE,MADI,CACJ,EAAE,CAAC;EACD,KAAK,EAAE,KAAM;CAAG",
+	"names": []
+}

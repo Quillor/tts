@@ -1,3 +1,188 @@
-body{
-  background: blue;
+.timeline{
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+body {
+  background-color: darkgreen;
+  animation-name: ground;
+  @extend .timeline;
+}
+
+.sky{
+  height: 600px;
+  width: 100%;
+  background-color: skyblue;
+  padding-top: calc(300px - 25px);
+  // Hides elements that flow outside of the sky
+  overflow: hidden;
+  animation-name: skylight;
+  @extend .timeline;
+}
+.sun{
+  @extend .timeline;
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: sunset;
+}
+@-webkit-keyframes sunset {
+  // Sunrise
+  0% {
+    background-color: white;
+    transform:
+      translate(-50vw , 300px)
+      scale(3,3)
+    ;
+  }
+  // Late morning
+  25% {
+    background-color: pink;
+  }
+  // Noon
+  40% {
+    box-shadow: 0px 0px 20px yellow;
+    background-color: yellow;
+
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  60% {
+    box-shadow: 0px 0px 20px yellow;
+    background-color: yellow;
+
+  }
+  // Sunset
+  75% {
+    background-color: lavender;
+  }
+  // Night
+  100% {
+    background-color: white;
+    transform:
+      translate(50vw , 300px)
+      scale(3,3)
+    ;
+  }
+}
+
+@-webkit-keyframes skylight {
+  // Sunrise
+  0% {
+    background-color: lightpink;
+  }
+  // Late morning
+  25% {
+
+  }
+  // Noon
+  40% {
+    background-color: skyblue;
+
+  }
+  50% {
+
+  }
+  60% {
+    background-color: skyblue;
+
+  }
+  // Sunset
+  75% {
+    background-color: orange;
+  }
+  // Night
+  100% {
+    background-color: purple;
+  }
+}
+
+@-webkit-keyframes ground {
+  // Sunrise
+  0% {
+    background-color: purple;
+  }
+  // Late morning
+  25% {
+
+  }
+  // Noon
+  40% {
+    background-color: #474;
+
+  }
+  50% {
+
+  }
+  60% {
+        background-color: #474;
+
+  }
+  // Sunset
+  75% {
+    background-color: brown;
+  }
+  // Night
+  100% {
+    background-color: #405;
+  }
+}
+
+/* CSS */
+.exampleClass {
+  // links the .class to an animation timeline
+  // MUST match the spelling of the timeline.
+  animation-name: myFirstAnimation;
+  // This is the speed of the animation in seconds
+  animation-duration: 5s;
+  // How many times do you want to repeat?
+  // Can be a number or "infinite"
+  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
+  // Defines the direction that you travel
+  // on the timeline.
+    // normal: 0-100, 0-100
+    // reverse: 100-0, 100-0
+    // alternate: 0-100, 100-0
+    // alternate-reverse: 100-0, 0-100
+  animation-direction: normal;
+  // Transforms by rotation from 0deg - 360deg
+  // transform: rotate(180deg);
+  // Transform by moving on the x and y axis by pxs or %
+  // transform: translate(50%,100px);
+  // Transforms by scaling the object on the x and y axis.
+  // Scale by units based on 1.
+  // ex. Half scale = .5
+  // no scale = 1
+  // double size 2
+  transform: scale(.4 , 2.4);
+  text-align: center;
+
+  border: solid 1px black;
+}
+@-webkit-keyframes mySecondAnimation {
+  0% {
+    // Transform: Animate or move an element
+      //
+    transform: rotate(0deg);
+    transform: translate(0px,0px);
+    transform: scale(1,1);
+  }
+
+  50% {
+    transform: rotate(180deg);
+    transform: translate(0px,10px);
+    transform: scale(2,2);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform: translate(0px,20px);
+    transform: scale(3,3);
+  }
 }

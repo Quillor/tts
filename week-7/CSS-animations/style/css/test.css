@@ -1,0 +1,16 @@
+/* line 4, /Users/timrosenberg/Documents/GitHub/tts/week-7/CSS-animations/style/sass/test.sass */
+p {
+  color: blue;
+}
+
+/* line 8, /Users/timrosenberg/Documents/GitHub/tts/week-7/CSS-animations/style/sass/test.sass */
+h1 {
+  color: red;
+}
+
+/* line 12, /Users/timrosenberg/Documents/GitHub/tts/week-7/CSS-animations/style/sass/test.sass */
+.class h1 {
+  color: black;
+}
+
+/*# sourceMappingURL=../css/test.map */
